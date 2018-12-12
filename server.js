@@ -10,7 +10,7 @@ http.createServer(function (req, res)
         let awsConfig = {
           "region": "us-east-1",
           "endpoint": "http://dynamodb.us-east-1.amazonaws.com",
-          "accessKeyId": "AKIAIOT22OKAC35FLQRQ", "secretAccessKey": "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"
+          "accessKeyId": "AKIAIB6AEKGB7VQBZHFQ", "secretAccessKey": "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"
             };
             AWS.config.update(awsConfig);
             let docClient = new AWS.DynamoDB.DocumentClient();
@@ -103,7 +103,7 @@ http.createServer(function (req, res)
                                   "<style>table, tr, th {border: 1px solid black;border-collapse: collapse;}</style>"+
                                   "</head>" +
                                   "<body>" +
-                                  "<p>Danh sách tất cả các mặt hàng </p>"
+                                  "<p>Danh sách tất cả các bộ phim </p>"
 
                                   +"<table style='width:20%'><tr><th>ID</th><th>Name</th><th>Delete</th></tr>";
                               data.Items.forEach(function(item) {
