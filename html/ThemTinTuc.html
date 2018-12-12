@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<title>NewsPaper</title>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html">News</a></h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html" class="current">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="#">Bảng </a>
+						<ul class="sub-menu">
+							<li><a href="TaoBang.html">Tạo bảng</a></li>
+							<li><a href="XoaBang.html">Xóa bảng</a></li>
+						</ul>
+					</li>	
+					<li><a href="#">Tin tức</a>
+						<ul class="sub-menu">
+							<li><a href="ThemTinTuc.html">Thêm tin tức</a></li>
+							<li><a href="XoaTinTuc.html">Xóa tin tức</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="adbanner">
+			<div id="ad">
+				<center><img src="images/news.jpg" alt="" style="width:400px;height:125px;"></img></center>
+			</div>
+		</div>
+		<form action = "/themTinTuc" method = "GET" enctype="multipart/form-data">
+			<h3>Thêm tin tức</h3>
+			Table name: <input type="text" name = "name"><br>
+			Title: <input type = "text" name = "title"><br>
+			release_Date: <input type = "datetime-local" name = "release_Date"><br/>
+			latest_update: <input type = "datetime-local" name = "latest_update"><br/>
+			view: <input type = "number" name = "view" min="0"><br>
+			rating: <input type = "number" name = "rating" min="0" max="5" step="0.1"><br>
+			genres: 
+			<select name="genres">
+				  <option value="volvo">Business</option>
+				  <option value="saab">Games</option>
+				  <option value="mercedes">Fashion</option>
+				  <option value="audi">Sports</option>
+				  <option value="audi">Technology</option>
+			</select><br>	
+			<br>
+			<h3>Comment:</h3>
+			<ul style="list-style-type:none">
+				<li>comment_id: </li>
+				<li>-  <input type = "text" name = "view" min="0" placeholder="CM001"><br></li>
+				<li>commentator: </li>
+				<li>-  <input type = "text" name="commentator" rows="10" cols="30" placeholder="Armin"></input><br></li>
+				<li>content: </li>
+				<li>-  <textarea name="comment_content" rows="10" cols="30">Comment_content.</textarea><br></li>
+			</ul>
+			<br>
+			<h3>Author:</h3>	
+			<ul style="list-style-type:none">
+				<li>fname: </li>
+				<li>-  <input type = "text" name = "fname" placeholder="fname"><br></li>
+				<li>lname: </li>
+				<li>-  <input type = "text" name = "lname" placeholder="lname"><br></li>
+				<li>birthday: </li>
+				<li>-  <input type = "datetime-local" name = "birthday"></li>
+				<li>phone: </li>
+				<li>-  <input type = "tel" name = "phone" placeholder="093123563"><br></li>
+			</ul>
+			<br>
+			<h3>Content:</h3> <textarea name="content" rows="10" cols="30">Content.</textarea><br>
+			<input type = "submit" style="width:100px;height:50px" value = "Submit"><br>
+		</form>
+	</body>
+</html>

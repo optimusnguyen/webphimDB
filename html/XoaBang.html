@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<title>NewsPaper</title>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html">News</a></h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html" class="current">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="#">Bảng </a>
+						<ul class="sub-menu">
+							<li><a href="TaoBang.html">Tạo bảng</a></li>
+							<li><a href="XoaBang.html">Xóa bảng</a></li>
+						</ul>
+					</li>	
+					<li><a href="#">Tin tức</a>
+						<ul class="sub-menu">
+							<li><a href="ThemTinTuc.html">Thêm tin tức</a></li>
+							<li><a href="XoaTinTuc.html">Xóa tin tức</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="adbanner">
+			<div id="ad">
+				<center><img src="images/news.jpg" alt="" style="width:400px;height:125px;"></img></center>
+			</div>
+		</div>
+		<form action = "/xoabang" method = "GET" enctype="multipart/form-data">
+			<h3>Xóa bảng</h3><br>
+			Table name: <input type="text" name = "name"><br>
+			<input type = "submit" value = "Submit"><br>
+		</form>
+	</body>
+</html>
